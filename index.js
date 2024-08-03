@@ -1,9 +1,5 @@
 const express = require("express");
-<<<<<<< HEAD
 const path = require("path");
-=======
-
->>>>>>> 5729c97cc3240a5fce820bc2953261fe5c8acbf2
 const app = express();
 
 require("dotenv").config();
@@ -11,11 +7,8 @@ require("dotenv").config();
 app.use(express.json());
 
 const connectDB = require("./connectMongo");
-<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, 'home')));
-=======
 
->>>>>>> 5729c97cc3240a5fce820bc2953261fe5c8acbf2
 connectDB();
 
 const DeviceModel = require("./models/book.model");
