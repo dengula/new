@@ -63,8 +63,6 @@
         <form id="post-form">
             <h2>Add Device</h2>
             <input type="text" id="post-name" placeholder="Name" required>
-            <input type="text" id="post-ip" placeholder="IP" required>
-            <input type="text" id="post-country" placeholder="Country" required>
             <button type="button" onclick="postData()">Add Device</button>
         </form>
 
@@ -103,11 +101,9 @@
 
         async function postData() {
             const name = document.getElementById('post-name').value;
-            const ip = document.getElementById('post-ip').value;
-            const country = document.getElementById('post-country').value;
 
             const payload = {
-                name: `${name}|${ip}|${country}`
+                name: `${name}`
             };
 
             try {
